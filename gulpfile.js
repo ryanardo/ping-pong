@@ -1,3 +1,4 @@
+////////// DEPENDENCIES //////////
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var browserify = require('browserify');
@@ -5,6 +6,10 @@ var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
 var utilities = require('gulp-util');
 
+////////// ENVIRONMENT VARIABLES //////////
+var buildProduction = utilities.env.production;
+
+////////// TASKS //////////
 gulp.task('jsBrowserify', ['concatInterface'], function () {
 	return browserify({ entries: ['./tmp/allConcat.js'] })
 		.bundle()
@@ -30,4 +35,5 @@ gulp.task("build", function () {
 	} else {
 		gulp.start('jsBrowserify');
 	}
+
 });
