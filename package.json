@@ -1,0 +1,26 @@
+{
+	"name": "ping-pong",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts":
+	{
+		"test": "test"
+	},
+	"repository":
+	{
+		"type": "git",
+		"url": "git+https://github.com/ryanglenferris/ping-pong.git"
+	},
+	"author": "Ryan G Ferris",
+	"license": "ISC",
+	"devDependencies":
+	{
+		"gulp": "^3.9.1"
+	}
+	"bugs":
+	{
+		"url": "https://github.com/ryanglenferris/ping-pong/issues"
+	},
+	"homepage": "https://github.com/ryanglenferris/ping-pong#readme"
+}
