@@ -1,26 +1,24 @@
 {
-	"name": "ping-pong",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts":
-	{
-		"test": "test"
-	},
-	"repository":
-	{
-		"type": "git",
-		"url": "git+https://github.com/ryanglenferris/ping-pong.git"
-	},
-	"author": "Ryan G Ferris",
-	"license": "ISC",
-	"devDependencies":
-	{
-		"gulp": "^3.9.1"
-	}
-	"bugs":
-	{
-		"url": "https://github.com/ryanglenferris/ping-pong/issues"
-	},
-	"homepage": "https://github.com/ryanglenferris/ping-pong#readme"
+  "name": "ping-pong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanglenferris/ping-pong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanglenferris/ping-pong/issues"
+  },
+  "homepage": "https://github.com/ryanglenferris/ping-pong#readme",
+  "devDependencies": {
+    "browserify": "^15.2.0",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
 }
