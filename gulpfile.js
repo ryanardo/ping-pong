@@ -6,6 +6,7 @@ var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
 var utilities = require('gulp-util');
 var del = require('del');
+var jshint = require('gulp-jshint');
 
 ////////// ENVIRONMENT VARIABLES //////////
 var buildProduction = utilities.env.production;
@@ -40,4 +41,10 @@ gulp.task("build", function () {
 
 gulp.task("clean", function () {
 	return del(['build', 'tmp']);
+});
+
+gulp.task('jshint', function () {
+	return gulp.src(['js/*.js'])
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'));
 });
