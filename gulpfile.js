@@ -5,6 +5,7 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
 var utilities = require('gulp-util');
+var del = require('del');
 
 ////////// ENVIRONMENT VARIABLES //////////
 var buildProduction = utilities.env.production;
@@ -35,5 +36,8 @@ gulp.task("build", function () {
 	} else {
 		gulp.start('jsBrowserify');
 	}
+});
 
+gulp.task("clean", function () {
+	return del(['build', 'tmp']);
 });
