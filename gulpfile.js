@@ -22,3 +22,11 @@ gulp.task('concatInterface', function () {
 		.pipe(concat('allConcat.js'))
 		.pipe(gulp.dest('./tmp'));
 });
+
+gulp.task("build", function () {
+	if (buildProduction) {
+		gulp.start('minifyScripts');
+	} else {
+		gulp.start('jsBrowserify');
+	}
+});
